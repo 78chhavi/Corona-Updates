@@ -1,0 +1,26 @@
+<%- include('partials/headerINDIA')-%>
+  <div class="india-top"></div>
+  <section class="tab" id="india-record">
+  <input type="text" class="tabval" placeholder="Search.." onkeyup="searchFun(event)"><button type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+  <div class="record" id="records" style="display:block">
+  <table  id="tabval">
+  <tr>
+    <th>State</th>
+    <th>Confirmed</th>
+    <th>Active</th>
+    <th>Recovered</th>
+    <th>Deaths</th>
+  </tr>
+  <%indiaData.forEach((item) => {%>
+    <tr id=<%=item.state%>>
+      <td id="one"><%=item.state%></td>
+      <td id="two"><%=item.confirmed%></td>
+      <td id="three"><%=item.active%></td>
+      <td id="four"><%=item.recovered%></td>
+      <td id="five"><%=item.deaths%></td>
+    </tr>
+  <%});%>
+</table>
+</div>
+</section>
+<%- include('partials/footer')-%>

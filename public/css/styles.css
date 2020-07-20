@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+h1{
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 4px;
+}
+section{
+  padding:3rem 0;
+}
+hr{
+  border-top: 3px dotted #00cec9;
+  width:3%;
+}
+video{
+  position: relative;
+  z-index: 0;
+}
+/* *********************************Scroll Button*********************************************/
+#scrollBtn{
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  outline: none;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff9595;
+  box-shadow: 0 0 10px #ffeadb;
+  border:none;
+  cursor: pointer;
+  color: white;
+}
+#scrollBtn:hover{
+  background:#c9485b;
+}
+
+/* ***********************************Top Section************************************************ */
+#top{
+  position: relative;
+}
+.headline{
+  max-width: 80%;
+  position: absolute;
+  z-index: 1;
+  top:30%;
+  left:10%;
+  right:10%;
+  text-align: center;
+}
+/* .corona-img{
+  animation: rotation 2s infinite linear;
+  display: block;
+  margin:auto;
+  opacity: 0.6;
+  width:10%;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} */
+#top #top{
+  color:white;
+  font-size:180%;
+}
+ #top #bottom{
+  color:#25CCF7;
+  font-size:150%;
+}
+/* *****************************************Navigation Bar******************************************* */
+nav{
+  padding: 0% 1.77778rem;
+}
+.navbar-brand{
+  font-size: 2rem;
+}
+.navbar{
+  background-color:#fab1a0;
+}
+.collapse{
+  font-size: 1.25rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 0;
+  padding-left:30px;
+}
+.list{
+  padding-left:10px;
+  width: auto;
+  align-items: center;
+}
+.nav-item{
+  padding: 0px 0.5rem;
+}
+
+.dropdown-menu{
+  background-color:#61d4b3;
+}
+/* *****************************************Top Section(India)*********************************************** */
+.india-top{
+  background-image:url("/images/india.jpg");
+  height:800px;
+  width: 100%;
+  background-repeat: no-repeat;
+   background-size: 100%;
+}
+@media only screen and (max-width: 1183px) {
+  .india-top{
+    height:400px;
+  }
+}
+/* *****************************************Top Section(Region)*********************************************** */
+.region-top{
+  height:700px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image:url("/images/regionwise.jpg");
+}
+@media only screen and (max-width: 1183px) {
+  .region-top{
+    height:400px;
+  }
+}
+
+
+/* *******************************************************Search Bar************************************************* */
+.tab input{
+  display:inline-block;
+  margin-left:2%;
+  background-color: #f1f2f6;
+  border: 2px solid #a29bfe;
+  border-radius: 6px;
+}
+#searchBtn{
+  background-color: #feca57;
+  border: 2px solid #a29bfe;
+  border-radius: 6px;
+}
+/* ***********************************************************Table******************************************************** */
+table, th, td {
+  border: 1px solid white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+table {
+  border-collapse: collapse;
+  width:100%;
+}
+th {
+  height: 50px;
+  background-color:#e67e22;
+}
+td{
+  height:30px;
+}
+.record{
+  height:500px;
+  overflow-y:auto;
+  margin:0 2%;
+}
+
+#one{
+  background-color: #8e44ad;
+  color:white;
+  width:30%;
+}
+#two,#five{
+  background-color:#7ed6df;
+}
+#three,#six{
+  background-color: #f39c12;
+}
+#four,#seven{
+  background-color: #badc58;
+}
+.row{
+  margin: auto;
+}
+
+/* ********************************************************About Section********************************************************** */
+#aboutCorona{
+    background-color: #ffeadb;
+}
+.about{
+  font-size: 1.20rem;
+  line-height: 1.75;
+}
+.left{
+  padding: 3%;
+}
+.right{
+  margin-top:20px;
+}
+.about-img{
+  border-radius: 2.5px;
+  width:75%;
+  height:220px;
+  box-shadow: 5px 10px #dfe4ea;
+  display:block;
+  margin-top:10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* **********************************************************Symptoms Section****************************************************** */
+#symptoms{
+  background-color: #eeeeee;
+  padding-bottom: 8%;
+}
+#symptoms img{
+  margin:auto;
+  margin-top: 50px;
+  display:block;
+}
+/* **********************************************************Preventions Section****************************************************** */
+#preventions{
+    background-color:#ffeadb ;
+}
+#preventions img{
+  margin:auto;
+  display:block;
+}
+.pre{
+  margin:35px auto;
+}
+figcaption{
+  text-align: center;
+}
+.second img{
+  height:80px;
+  width:80px;
+}
+/* **********************************************************Form Section****************************************************** */
+form{
+  margin:auto;
+  max-width:50%;
+}
+/* **********************************************************Footer Section****************************************************** */
+.footer{
+  margin:0;
+  background-color: #7ed6df;
+  text-align: center;
+  height: 100px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  margin-top: 1rem;
+}

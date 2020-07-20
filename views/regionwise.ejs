@@ -1,0 +1,36 @@
+<%- include('partials/headerREGION')-%>
+<div class="region-top">
+    <!-- <img class="corona-img" src="/images/corona.png" alt="corona"> -->
+  </div>
+<%for (const state in regionsData) {%>
+  <%if(state!="State Unassigned"){%>
+      <section class="tab" id=_<%=state%>>
+      <h1><%=state%></h1>
+      <input class=<%=state%> type="text" placeholder="Search.." onkeyup="searchFun(event)"><button type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+      <div class="record">
+        <table id=<%=state%>>
+        <thead>
+          <th>District</th>
+          <th>Active</th>
+          <th>Confirmed</th>
+          <th>Deceased</th>
+          <th>Recovered</th>
+        </thead>
+        <%const cities=regionsData[state].districtData;%>
+        <%for(const city in cities){%>
+              <tr id=<%=city%>>
+                <td id="one"><%=city%></td>
+                <td id="two"><%=cities[city].active%></td>
+                <td id="three"><%=cities[city].confirmed%></td>
+                <td id="four"><%=cities[city].deceased%></td>
+                <td id="five"><%=cities[city].recovered%></td>
+              </tr>
+          <%}%>
+    </table>
+  </div>
+</section>
+<%}%>
+<%}%>
+
+
+<%- include('partials/footer')-%>

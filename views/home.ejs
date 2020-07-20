@@ -1,0 +1,45 @@
+<%- include('partials/header')-%>
+  <section id="top" style="padding:0">
+    <video muted autoplay loop style="width:100%;">
+     <source src="/images/hdvideo.mp4" type="video/mp4">
+    </video>
+    <div class="headline">
+      <p id="top">“Better to wear a mask than a ventilator;</p>
+
+        <p id="bottom">Better to stay at home than in an ICU.”</p>
+    </div>
+  </section>
+
+
+  <section class="tab" id="corona-table">
+    <h1>Welcome to Covid-19 Tracking System!</h1>
+      <input type="text" class="tabval" placeholder="Search.." onkeyup="searchFun(event)"><button type="button" id="searchBtn"><span><i class="fas fa-search"></i></span></button>
+      <!-- <div class="record" id="search-country" style="display:none"></div> -->
+    <div class="record" id="records" style="display:block">
+      <table id="tabval">
+      <thead>
+        <th>Country</th>
+        <th>NewConfirmed</th>
+        <th>Total Confirmed</th>
+        <th>New Deaths</th>
+        <th>Total Deaths</th>
+        <th>New Recovered</th>
+        <th>Total Recovered</th>
+      </thead>
+      <%worldData.forEach((item) => {%>
+        <tr id=<%=item.Country%>>
+          <td id="one"><%=item.Country%></td>
+          <td id="two"><%=item.NewConfirmed%></td>
+          <td id="three"><%=item.TotalConfirmed%></td>
+          <td id="four"><%=item.NewDeaths%></td>
+          <td id="five"><%=item.TotalDeaths%></td>
+          <td id="six"><%=item.NewRecovered%></td>
+          <td id="seven"><%=item.TotalRecovered%></td>
+        </tr>
+      <%});%>
+    </table>
+    </div>
+
+</section>
+
+<%- include('partials/footer')-%>
